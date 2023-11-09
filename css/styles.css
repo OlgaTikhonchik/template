@@ -1,0 +1,163 @@
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --primary-white-color: #ffffff;
+  --title-text-color: #000000;
+  --accent-color: #18a0fb;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Montserrat, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-text-color);
+}
+/* Header */
+.logo {
+  color: var(--title-text-color);
+  text-align: center;
+  font-family: Comfortaa, cursive;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.427px;
+}
+
+.logo:hover {
+  color: var(--accent-color);
+}
+.site-nav .link {
+  color: var(--accent-color);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.225px;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+
+.button {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.225px;
+}
+
+.primary {
+  text-align: center;
+
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+.primary:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.secondary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-size: 17px;
+  letter-spacing: -0.255px;
+}
+
+.secondary:hover {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+/* Hero */
+.hero-title {
+  text-align: center;
+
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.42;
+  letter-spacing: -0.84px;
+}
+
+/* Features */
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.72px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.36px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: -0.27px;
+}
+
+/* Feedback */
+
+.feedback-text {
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.39;
+  letter-spacing: -0.54px;
+}
+
+/* Singup */
+.singup-text {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.39;
+  letter-spacing: -0.54px;
+}
+
+/* Footer */
+
+.footer-link {
+  color: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: -0.225px;
+}
+
+.soc-link {
+}
+
+.footer-text {
+  text-align: center;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.225px;
+}
