@@ -3,6 +3,7 @@
   --primary-white-color: #ffffff;
   --title-text-color: #000000;
   --accent-color: #18a0fb;
+  --secondary-bg-color: #f5f5f5;
 }
 
 body {
@@ -17,6 +18,8 @@ a {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -24,8 +27,28 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 /* Header */
 .logo {
@@ -59,6 +82,12 @@ h6 {
 }
 
 .button {
+  display: inline-block;
+  min-width: 130px;
+  padding: 11px 34px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
@@ -66,8 +95,8 @@ h6 {
 }
 
 .primary {
+  border-color: var(--accent-color);
   text-align: center;
-
   color: var(--accent-color);
   background-color: var(--primary-white-color);
 }
@@ -79,7 +108,7 @@ h6 {
 .secondary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  font-size: 17px;
+
   letter-spacing: -0.255px;
 }
 
@@ -89,9 +118,12 @@ h6 {
 }
 
 /* Hero */
-.hero-title {
+.hero {
   text-align: center;
+}
 
+.hero-title {
+  margin-bottom: 40px;
   font-size: 56px;
   font-weight: 400;
   line-height: 1.42;
@@ -100,6 +132,7 @@ h6 {
 
 /* Features */
 .section-title {
+  margin-bottom: 30px;
   text-align: center;
   font-size: 48px;
   font-weight: 400;
@@ -107,7 +140,13 @@ h6 {
   letter-spacing: -0.72px;
 }
 
+.section-title.left {
+  text-align: start;
+  margin-bottom: 60px;
+}
+
 .subtitle {
+  margin-bottom: 24px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.5;
@@ -115,10 +154,21 @@ h6 {
 }
 
 .text {
+  margin-bottom: 32px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.66;
   letter-spacing: -0.27px;
+}
+
+/* Work */
+.work-item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.work-item:nth-child(even) {
+  background-color: var(--secondary-bg-color);
 }
 
 /* Feedback */
