@@ -72,6 +72,10 @@ p {
   color: var(--accent-color);
 }
 
+.logo:hover svg {
+  color: inherit;
+}
+
 .site-nav {
   display: flex;
   margin-left: 70px;
@@ -146,6 +150,7 @@ p {
 .secondary:hover {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
+  border-color: var(--accent-color);
 }
 
 /* Hero */
