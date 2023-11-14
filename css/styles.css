@@ -4,6 +4,7 @@
   --title-text-color: #000000;
   --accent-color: #18a0fb;
   --secondary-bg-color: #f5f5f5;
+  --border-footer: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -38,7 +39,7 @@ p {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .section {
@@ -51,6 +52,12 @@ p {
   padding-bottom: 0;
 }
 /* Header */
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: var(--title-text-color);
   text-align: center;
@@ -64,7 +71,21 @@ p {
 .logo:hover {
   color: var(--accent-color);
 }
+
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   color: var(--accent-color);
   font-size: 15px;
   font-weight: 500;
@@ -79,6 +100,16 @@ p {
 
 .site-nav .link.current {
   color: var(--title-text-color);
+}
+
+.nav-auth {
+  display: flex;
+  align-items: auto;
+  margin-left: auto;
+}
+
+.nav-auth .item + .item {
+  margin-left: 12px;
 }
 
 .button {
@@ -153,6 +184,16 @@ p {
   letter-spacing: -0.36px;
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -75px;
+}
+
+.features-list .item {
+  width: 625px;
+  margin: 40px 75px;
+}
 .text {
   margin-bottom: 32px;
   font-size: 18px;
@@ -161,20 +202,45 @@ p {
   letter-spacing: -0.27px;
 }
 
-/* Work */
-.work-item {
+/* Examples Work */
+.work-list .item {
+  display: flex;
+  align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.work-item:nth-child(even) {
+.work-list .item:nth-child(2n) {
+  flex-direction: row-reverse;
   background-color: var(--secondary-bg-color);
+}
+
+.work-list .item:nth-child(2n + 1) .content {
+  margin-left: 84px;
+}
+
+.work-list .item:nth-child(2n) .content {
+  margin-right: 84px;
 }
 
 /* Feedback */
 
+.feedback-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1020px;
+  margin: -30px -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-list .item {
+  margin: 30px 40px;
+}
+
 .feedback-text {
   text-align: center;
+  margin-bottom: 80px;
 
   font-size: 36px;
   font-weight: 400;
@@ -183,6 +249,16 @@ p {
 }
 
 /* Singup */
+
+.singup {
+  display: flex;
+  align-items: center;
+}
+
+.section-singup {
+  background-color: var(--secondary-bg-color);
+}
+
 .singup-text {
   font-size: 36px;
   font-weight: 400;
@@ -190,7 +266,27 @@ p {
   letter-spacing: -0.54px;
 }
 
+.singup-link {
+  display: flex;
+  margin-left: auto;
+}
+.singup-link .button + .button {
+  margin-left: 45px;
+}
+
 /* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.footer-list {
+  display: flex;
+}
+
+.footer-list .item + .item {
+  margin-left: 100px;
+}
 
 .footer-link {
   color: inherit;
@@ -200,9 +296,20 @@ p {
   letter-spacing: -0.225px;
 }
 
-.soc-link {
+.soc-list {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid var(--border-footer);
 }
 
+.soc-list .item {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.soc-list .item + .item {
+  margin-left: 21px;
+}
 .footer-text {
   text-align: center;
 
