@@ -320,6 +320,10 @@ p {
   margin-left: 100px;
 }
 
+.footer-list .item:hover{
+  color: var(--primary-white-color);
+}
+
 .footer-link {
   color: inherit;
   font-size: 15px;
