@@ -80,11 +80,11 @@ p {
 }
 
 .logo:hover {
-  color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
-.logo:hover svg {
-  color: inherit;
+.icon-logo:hover {
+  fill: var(--primary-white-color);;
 }
 
 .site-nav {
