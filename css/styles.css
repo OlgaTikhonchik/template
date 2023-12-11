@@ -448,6 +448,12 @@ p {
   cursor: pointer;
   background-color: var(--primary-white-color);
 
+  transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+
+.button-close:hover{
+  border: 1px solid var(--accent-color); 
+  fill: var(--accent-color) 
 }
 
 .form-modal {
@@ -485,7 +491,9 @@ p {
   transition: border-bottom 250ms var(--timing-function);
 }
 
-.modal-input:hover, .modal-textarea:hover{
+.modal-input:hover,
+.modal-input:focus, .modal-textarea:hover,
+.modal-textarea:focus{
   border-bottom: 1px solid var(--accent-color);
 
 }
