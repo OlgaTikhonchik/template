@@ -488,7 +488,7 @@ p {
 .modal-input:hover, .modal-textarea:hover{
   border-bottom: 1px solid var(--accent-color);
 
-}a
+}
 .wrap-textarea{
   margin-bottom: 30px;
 }
