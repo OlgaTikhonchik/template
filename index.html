@@ -46,7 +46,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">The largest community of photo enthusiasts</h1>
-          <a href="" class="button secondary">Join Today</a>
+          <button href="" class="button secondary" data-modal-open>Join Today</button>
         </div>
       </section>
       <!-- Features -->
@@ -200,8 +200,8 @@
             elit, sed do eiusmod tempor incididunt ut labore
           </p>
           <div class="singup-link">
-            <a href="" class="button secondary">Join Today</a>
-            <a href="" class="button primary">Contact us</a>
+            <button  href="" class="button secondary" data-modal-open>Join Today</button>
+            <a href="" class="button primary" >Contact us</a>
           </div>
         </div>
       </section>
@@ -258,5 +258,36 @@
         <p class="footer-text">&#169; Photo, Inc. 2019. We love our users!</p>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="button-close" data-modal-close>
+          <svg class="icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form class="form-modal">
+          <div class="wrap-input">
+            <label class="modal-label" for="name-modal">Name*</label>
+            <input class="modal-input" type="text" name="" id="name-modal" required>
+            <label class="modal-label" for="phone-modal">Phone*</label>
+            <input class="modal-input" type="text" name="" id="phone-modal" required>
+            <label class="modal-label" for="email-modal">Email*</label>
+            <input class="modal-input" type="text" name="" id="email-modal" required>
+          </div>
+          <div class="wrap-textarea">
+            <label class="modal-label" for="message-modal">Message*</label>
+            <textarea class="modal-textarea" name="" id="message-modal" ></textarea>
+          </div>
+          <button class="button primary modal-button" type="submit">Send</button>
+        </form>
+
+        
+      </div>
+
+    </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
